@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "date-format-parse": "^0.2.7",
     "next": "latest",
+    "nprogress": "^0.2.0",
+    "plaiceholder": "^2.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-loader-spinner": "^4.0.0",
+    "sharp": "^0.29.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

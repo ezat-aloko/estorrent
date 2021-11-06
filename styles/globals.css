@@ -1,0 +1,157 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    @apply bg-black text-accents_0 font-Signika;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  /* h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+  } */
+  p {
+    @apply text-sm;
+  }
+  table {
+    display: table;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+  }
+  tr {
+    @apply border-b border-accents_4;
+  }
+  thead tr th {
+    @apply text-left text-sm uppercase;
+  }
+  table td,
+  table th {
+    @apply align-middle py-3;
+  }
+
+  table td:not(:first-child),
+  table th:not(:first-child) {
+    @apply px-4;
+  }
+  label {
+    color: #666;
+  }
+
+  input,
+  textarea,
+  select,
+  option {
+    @apply text-accents_9 border border-accents_4 w-full px-4 py-3;
+  }
+  figure {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  button {
+    @apply border border-accents_4 px-2 py-1;
+  }
+  /* input:invalid {
+    @apply border border-red-600 border-solid;
+  }
+  input:required:invalid {
+    @apply border border-red-600 border-solid;
+  } */
+}
+
+@layer utilities {
+  .rounded-1\/2 {
+    border-radius: 50%;
+  }
+  .bg-black-opacity-5 {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .custom-transition {
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .shadow-custom {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .carousel-slider .slider {
+    width: 640px !important;
+    margin: 0 auto !important;
+  }
+  .menu-arr::after {
+    content: '\2192';
+    float: right;
+    vertical-align: middle;
+    color: #8ec656;
+    display: inline-block;
+  }
+  .body-overlay {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  .right-0\/4 {
+    right: 0%;
+  }
+
+  .slider__img {
+    width: 100%;
+    height: 100%;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+}

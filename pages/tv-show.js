@@ -22,17 +22,10 @@ export default function Home({ movies, images }) {
         }}
       >
         <div className='container'>
-          <div className='row justify-center'>
+          <div className='row justify-center mb-6'>
             <div className='col-lg-7'>
-              <div className='text-center mt-b'>
-                <h1 className='text-xl md:text-3xl lg:text-4xl mb-6'>
-                  Download your favorite movies, series, and more free
-                </h1>
-                <div className='text-lg text-center'>
-                  Here you can browse and download movies in excellent 720p and 1080p quality, all
-                  at the smallest file size.
-                </div>
-                <div className='text-xl md:text-2xl lg:text-3xl mb-6 mt-20'>Search movies...</div>
+              <div className='text-center'>
+                <h1 className='text-xl md:text-3xl lg:text-4xl mb-6'>Search movies...</h1>
                 <div>
                   <SearchBox />
                 </div>
@@ -44,17 +37,35 @@ export default function Home({ movies, images }) {
       <section className=''>
         <div className='container'>
           <div className='row justify-center'>
-            <div className='col-12 py-8 bg-black'>
-              <div className='px-0 md:px-6 lg:px-12'>
-                <div className='pb-6 mb-12'>
-                  <h3 className='text-base md:text-lg lg:text-xl'>Popular Downloads</h3>
-                </div>
-                <div className='row justify-center lg:justify-start'>
-                  {movies.map((movie, index) => {
-                    if (movie.popularity) {
-                      return <Movie movie={movie} placeHolderURL={images[index]} id={movie.id} />
-                    }
-                  })}
+            <div className='col-12 order-1 order-lg-2 py-8 bg-black'>
+              <div className='container'>
+                <div className='row'>
+                  <section className=''>
+                    <div className='container'>
+                      <div className='row justify-center'>
+                        <div className='col-12 pb-8 bg-black'>
+                          <div className='px-0 md:px-6 lg:px-12'>
+                            <div className='row justify-center lg:justify-start'>
+                              {movies.map((movie, index) => {
+                                if (
+                                  movie.movie_industry &&
+                                  movie.movie_industry.movie_industry === 'TV Show'
+                                ) {
+                                  return (
+                                    <Movie
+                                      movie={movie}
+                                      placeHolderURL={images[index]}
+                                      id={movie.id}
+                                    />
+                                  )
+                                }
+                              })}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>

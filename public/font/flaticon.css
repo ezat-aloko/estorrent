@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?495cfdee147e17b798e07cf0ebb1899e") format("truetype"),
+url("./flaticon.woff?495cfdee147e17b798e07cf0ebb1899e") format("woff"),
+url("./flaticon.woff2?495cfdee147e17b798e07cf0ebb1899e") format("woff2"),
+url("./flaticon.eot?495cfdee147e17b798e07cf0ebb1899e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?495cfdee147e17b798e07cf0ebb1899e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-reading:before {
+    content: "\f101";
+}
+.flaticon-calendar:before {
+    content: "\f102";
+}
+.flaticon-twitter:before {
+    content: "\f103";
+}
+.flaticon-twitter-1:before {
+    content: "\f104";
+}
+.flaticon-facebook-logo:before {
+    content: "\f105";
+}
+.flaticon-instagram:before {
+    content: "\f106";
+}
+.flaticon-phone-call:before {
+    content: "\f107";
+}
+.flaticon-mortarboard:before {
+    content: "\f108";
+}
+.flaticon-traveler:before {
+    content: "\f109";
+}
+.flaticon-mail:before {
+    content: "\f10a";
+}
+.flaticon-pin:before {
+    content: "\f10b";
+}
+.flaticon-checked:before {
+    content: "\f10c";
+}
+.flaticon-contact:before {
+    content: "\f10d";
+}
+.flaticon-network:before {
+    content: "\f10e";
+}
+.flaticon-consult:before {
+    content: "\f10f";
+}
+.flaticon-experience:before {
+    content: "\f110";
+}
+.flaticon-right-arrow:before {
+    content: "\f111";
+}
+.flaticon-up-arrow:before {
+    content: "\f112";
+}
+.flaticon-customer:before {
+    content: "\f113";
+}
+.flaticon-guaranteed:before {
+    content: "\f114";
+}
+.flaticon-timeline:before {
+    content: "\f115";
+}
+.flaticon-producer:before {
+    content: "\f116";
+}
+.flaticon-menu:before {
+    content: "\f117";
+}
+.flaticon-close:before {
+    content: "\f118";
+}
